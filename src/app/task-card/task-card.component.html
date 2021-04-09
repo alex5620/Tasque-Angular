@@ -1,0 +1,13 @@
+<div class="task">
+    <div (click)="onActionClick('detail')" class="task-header">
+        {{ task.title }}
+    </div>
+    <div class="task-body">
+        <p class="description-text">{{ task.description }}</p>
+    </div>
+    <div class="task-footer">
+        <button (click)="onActionClick('detail')" class="task-button">Details</button>
+        <button (click)="onActionClick('edit')" class="task-button">Edit</button>
+        <button (click)="onActionClick('delete')" class="task-button">Delete</button>
+    </div>
+</div>

@@ -1,0 +1,173 @@
+#task-detail
+{
+    background: -webkit-linear-gradient(right, rgb(255, 255, 158), rgb(255, 255, 90));
+    box-shadow: 2px 3px 10px rgb(0, 0, 0);
+    border-radius: 4px;
+    width: 525px;
+}
+
+#empty-div
+{
+    height: 6px;
+}
+
+#title-header
+{
+    font-family: Brush Script MT, cursive;
+    font-size: 36px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    background: -webkit-linear-gradient(right, rgb(48, 47, 47), rgb(0, 0, 0));
+    box-shadow: 0px 1px 4px black;
+    color: rgb(255, 255, 255);
+    display: table;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+#task-detail-body
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#due-date
+{
+    font-size: 18px;
+    font-family: Robot, cursive;
+}
+
+#date
+{
+    margin-left: 6px;
+    font-size: 18px;
+}
+
+#priority-label
+{
+    font-size: 18px;
+    font-family: Robot, cursive;
+}
+
+#high-priority
+{
+    margin-left: 6px;
+    background: -webkit-linear-gradient(right, #ff5353, #ff1212);
+    box-shadow: 0px 1px 8px #ff1212;
+    border-radius: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+    color: white;
+}
+
+#medium-priority
+{
+    margin-left: 6px;
+    background: -webkit-linear-gradient(right, #ffac40, #ff7300);
+    box-shadow: 0px 1px 8px #ff7300;
+    border-radius: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+    color: white;
+}
+
+#low-priority
+{
+    margin-left: 6px;
+    background: -webkit-linear-gradient(right, #dafd3c, #dfdb02);
+    box-shadow: 0px 1px 8px #dfdb02;
+    border-radius: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+    color: white;
+}
+
+#status-label
+{
+    font-size: 18px;
+    font-family: Robot, cursive;
+}
+
+#status
+{
+    margin-left: 6px;
+}
+
+#button-div
+{
+    display: flex; 
+    justify-content: flex-end;
+}
+
+#close-button
+{
+    margin-right: 10px;
+    margin-bottom: 6px;
+    background: -webkit-linear-gradient(right, rgb(39, 39, 39), black);
+    color: white;
+    outline: none;
+    border-radius: 8px;
+}
+
+#close-button:hover
+{
+    box-shadow: 0px 2px 8px #0a0a0a;
+}
+
+#description-header
+{
+    font-family: Robot, cursive;
+}
+
+#date-div
+{
+    display: inline;
+    background: -webkit-linear-gradient(right, rgb(100, 64, 230), rgb(51, 0, 236));
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 8px rgb(60, 6, 255);
+    margin-left: 6px;
+    padding-right: 6px;
+    border-radius: 6px;
+}
+
+#todo-status
+{
+    display: inline;
+    background: -webkit-linear-gradient(right, #7cd3d6, #2d9bbd);
+    box-shadow: 0px 2px 8px #2d9bbd;
+    color: rgb(255, 255, 255);
+    margin-left: 6px;
+    padding-right: 6px;
+    border-radius: 6px;
+}
+
+#doing-status
+{
+    display: inline;
+    background: -webkit-linear-gradient(right, #80fa68, #48c52f);
+    box-shadow: 0px 2px 8px #48c52f;
+    color: rgb(255, 255, 255);
+    margin-left: 6px;
+    padding-right: 6px;
+    border-radius: 6px;
+}
+
+#done-status
+{
+    display: inline;
+    background: -webkit-linear-gradient(right, #fabc10, #f08a05);
+    box-shadow: 0px 2px 8px #f08a05;
+    color: rgb(255, 255, 255);
+    margin-left: 6px;
+    padding-right: 6px;
+    border-radius: 6px;
+}
+
+#description-div
+{
+    padding-left: 10px;
+    padding-bottom: 2px;
+    padding-right: 8px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,35 @@
+<div id="popup">
+    <div id="header-text">
+        <h1>Create task</h1>
+    </div>
+    <div id="input-div">
+        <input id="title-input" placeholder="Title" [(ngModel)]="task.title">
+    </div>
+    <div id="description-textarea">
+        <textarea id="description" placeholder="Description" [(ngModel)]="task.description"></textarea>
+    </div>
+    <div>
+        <label id="date-label">Due date:</label>
+        <input type="date" id="date" [(ngModel)]="task.dueDate">
+    </div>
+    <div>
+        <label id="priority-label">Priority:</label>
+        <select id="priority" [(ngModel)]="task.priority">
+            <option class="option-value" value="LOW">LOW</option>
+            <option class="option-value" value="MEDIUM">MEDIUM</option>
+            <option class="option-value" value="HIGH">HIGH</option>
+        </select>
+    </div>
+    <div>
+        <label id="status-label">Status:</label>
+        <select id="status" [(ngModel)]="task.status">
+            <option class="option-value" value="todo">TO DO</option>
+            <option class="option-value" value="doing">DOING</option>
+            <option class="option-value" value="done">DONE</option>
+        </select>
+    </div>
+    <div id="buttons-div">
+        <button id="create-button" (click)="onSubmit()">{{ task && task.taskId ? 'Update': 'Create' }}</button>
+        <button id="close-button" (click)="onClose()">Close</button>
+    </div>
+</div>

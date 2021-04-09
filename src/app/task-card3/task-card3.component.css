@@ -1,0 +1,91 @@
+.task {
+    margin: 10px;
+    padding-top: 6px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.task-header {
+    line-height: 20px; 
+}
+
+.task-title{ 
+    color: white;
+    background: -webkit-linear-gradient(right, #f19113, #9b5c0b);
+    box-shadow: 0px 1px 8px #b96f0e;
+    border-radius: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 40px;
+    font-family: "Raleway SemiBold", sans-serif;
+    display:inline-block;
+}
+
+.task-title:hover
+{
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.task-due
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 2px;
+    cursor: help;
+    background: -webkit-linear-gradient(right, rgb(100, 64, 230), rgb(51, 0, 236));
+    box-shadow: 0px 2px 8px rgb(60, 6, 255);
+    color: white;
+    display:inline-block;
+    margin-left: 50px;
+}
+
+.task-body{
+    width: 300px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.description-text {
+    padding: 3px 10px;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-family: "Verdana", sans-serif;
+    font-size: 14px;
+    color: rgb(48, 47, 47);
+}
+
+.task-footer {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4px;
+}
+
+.task-button {
+    margin-right: 5px;
+    background: -webkit-linear-gradient(right, #fabc10, #f08a05);
+    border: none;
+    border-radius: 21px;
+    box-shadow: 0px 1px 6px #F96928;
+    cursor: pointer;
+    color: white;
+    font-family: "Raleway SemiBold", sans-serif;
+    height: 20px;
+    margin: 0 auto;
+    transition: 0.25s;
+    width: 75px;
+    line-height: 20px;
+}
+
+.task-button:hover{
+    box-shadow: 0px 1px 12px #833912;
+}
+
+.task-button:focus {
+    outline:0;
+}

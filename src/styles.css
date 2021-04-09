@@ -1,0 +1,23 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+header{
+  /* height: 100px; */
+  height: 18%;
+  background-image: linear-gradient(90deg, #9df8f4 0%, #85ff99 33%, #deff85 66%);
+  text-align: center;
+  padding-top: 10px;
+}
+
+#title{
+  color: #00962d;
+  font-family: "Great Vibes", cursive;
+  font-size: 65px;
+  line-height: 65px;
+  font-weight: bold;
+  text-shadow: 0 1px 1px #fff;
+}

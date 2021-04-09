@@ -1,0 +1,39 @@
+<div id="task-detail">
+    <div id="empty-div"></div>
+    <div id="title-header">
+        {{ task.title }}
+    </div>
+    <div id="task-detail-body">
+        <div >
+            <h4 id="description-header">Description</h4>
+            <div id="description-div">{{ task.description }}</div>
+        </div>
+        <div>
+            <label id="due-date">Due date:</label>
+            <div id="date-div">
+                <label id="date">{{ task.dueDate }}</label>
+            </div>       
+        </div>
+        <div>
+            <label id="priority-label">Priority: </label>
+            <label *ngIf="task && task.priority == 'HIGH'" id="high-priority">{{ task.priority }}</label>
+            <label *ngIf="task && task.priority == 'MEDIUM'" id="medium-priority">{{ task.priority }}</label>
+            <label *ngIf="task && task.priority == 'LOW'" id="low-priority">{{ task.priority }}</label>
+        </div>
+        <div>
+            <label id="status-label">Status:</label>
+            <div *ngIf="task && task.status == 'todo'" id="todo-status">
+                <label id="status">{{ task.status | uppercase }}</label>
+            </div>
+            <div *ngIf="task && task.status == 'doing'" id="doing-status">
+                <label id="status">{{ task.status | uppercase }}</label>
+            </div>
+            <div *ngIf="task && task.status == 'done'" id="done-status">
+                <label id="status">{{ task.status | uppercase }}</label>
+            </div>
+        </div>
+    </div>
+    <div id="button-div">
+        <button id="close-button" (click)="onClose()">Close</button>
+    </div>
+</div>

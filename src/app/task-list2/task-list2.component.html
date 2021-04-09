@@ -1,0 +1,21 @@
+<div class="task-list">
+    <div class="list-type">
+        <p class="list-type-text">DOING</p>
+    </div>
+    <div id="empty-div" *ngIf="!(tasks && tasks.length > 0)">
+        No tasks to display.
+    </div>
+    <div *ngIf="tasks" 
+        cdkDropList
+        id="list-2"
+        [cdkDropListData] = "tasks"
+        [cdkDropListConnectedTo] = "['list-1','list-3']"
+        (cdkDropListDropped)="onDrop($event)"
+        class ="draggable-container">
+        <div *ngIf="tasks.length > 0" class="container">
+            <app-task-card2 class="container-element" *ngFor="let task of tasks" [task]="task" (onDetail)="detailTask($event)"
+            (onEdit)="updateTask($event)" (onDelete)="deleteTask($event)" cdkDrag></app-task-card2>
+        </div>
+        <div *ngIf="tasks.length == 0" class="empty-container"></div>
+    </div>
+</div>

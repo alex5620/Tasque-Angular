@@ -1,0 +1,77 @@
+.task {
+    margin: 10px;
+    padding-top: 6px;
+    
+    background-color: white;
+    border-radius: 5px;
+}
+
+.task-header {
+    height: 20px;
+    line-height: 20px; 
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+    background: -webkit-linear-gradient(right, #7cd3d6, #2d9bbd);
+    box-shadow: 0px 1px 8px #367ae0;
+    font-family: "Raleway SemiBold", sans-serif;
+    color: white;
+    display: table;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.task-header:hover
+{
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.task-body{
+    width: 300px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.description-text {
+    padding: 3px 10px;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-family: "Verdana", sans-serif;
+    font-size: 14px;
+    color: rgb(48, 47, 47);
+}
+
+.task-footer {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.task-button {
+    margin-right: 5px;
+    background: -webkit-linear-gradient(right, #7cd3d6, #2d9bbd);
+    border: none;
+    border-radius: 21px;
+    box-shadow: 0px 1px 6px #367ae0;
+    cursor: pointer;
+    color: white;
+    font-family: "Raleway SemiBold", sans-serif;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 auto;
+    transition: 0.25s;
+    width: 75px;
+}
+
+.task-button:hover{
+    box-shadow: 0px 1px 12px #053068;
+}
+
+.task-button:focus {
+    outline:0;
+}
